@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Gameboy';
+    src: url(src/gameboy.ttf);
+}
+@font-face {
+    font-family: 'Gameboy2';
+    src: url(src/gameboy2.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gameboy2', 'Gameboy', Arial;
+    background-color: #301934; /* Setting a background color */
+    color: #fff; /* Setting text color */
+}
+
+button.calc-btn {
+    font-family: inherit;
+    font-size: 30px; /* Adjusting button font size */
+    background-color: #6D3F96; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 30px; /* Adjusting button padding */
+    border-radius: 70px; /* Adding border radius for rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
+}
+
+button.calc-btn:hover {
+    background-color: #8E63B5; /* Changing button background color on hover */
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(src/background.gif);
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Adding transition for smooth hover effect */
+    font-size: 70px
+}
+
+nav ul li a:hover {
+    color: #8E63B5; /* Changing text color on hover */
+}
+
+.content {
+    font-size: 24px; /* Adjusting font size */
+    margin-top: 10px; /* Adding some top margin */
+    font-size: 30px
+}
+
+h2 {
+    font-size: 50px;
+}
+
