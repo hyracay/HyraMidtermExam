@@ -65,6 +65,7 @@ header .navbar {
 .hero-section {
   height: 100vh;
   background-image: url("src/background.gif");
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -73,10 +74,14 @@ header .navbar {
 }
 
 .hero-section .content {
-  max-width: 1200px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
   color: #fff;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero-section .content h2 {
@@ -85,11 +90,17 @@ header .navbar {
   line-height: 70px;
 }
 
+.hero-section .content h3 {
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
 .hero-section .content p {
   font-weight: 300;
   max-width: 600px;
-  margin-top: 15px;
-  font-size: 1.2rem;
+  margin-top: 24px;
+  font-size: 1.7rem;
 }
 
 .hero-section .content button {
@@ -143,7 +154,6 @@ header .navbar {
     font-size: 1.7rem;
   }
 
-    
   #hamburger-btn, #close-menu-btn {
     display: block;
   }
@@ -154,10 +164,21 @@ header .navbar {
     left: -250px;
     width: 250px;
     height: 100vh;
-    background: #fff;
+    background: #c8b3d1;
     flex-direction: column;
     padding: 70px 40px 0;
     transition: left 0.2s ease;
+  }
+
+  .menu-links img {
+    width: 30px;
+    border-radius: 30%;
+  }
+
+  .material-symbols-outlined img {
+    width: 40px;
+    border-radius: 30%;
+    margin-right: 20px;
   }
 
   header.show-mobile-menu .navbar .menu-links {
@@ -185,3 +206,69 @@ header .navbar {
     padding: 9px 18px;
   }
 }
+
+/* vision mision pop out */
+
+.question {
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 3px solid rgba(4, 217, 255);
+  background: rgba(143, 79, 179, 0.4);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 20px 1px  rgba(4, 217, 255);
+}
+
+.question-btn img {
+  width: 60px;
+  margin-left: 60px;
+  margin-bottom: -30px;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.question-title p {
+  margin-bottom: 12px;
+}
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-gold);
+  transition: var(--transition);
+}
+
+/* flip only if opened */
+/* .question-btn:hover {
+  transform: rotate(180deg);
+} */
+
+.question-text {
+  /* padding: 1rem 0 1.5rem 0;
+  background: rgba(143, 79, 179, 0.6);
+  border-radius: 20px; */
+  border-top: 3px solid rgba(4, 217, 255);
+}
+.question-text p {
+  margin-bottom: 0;
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+/* .minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}  */
