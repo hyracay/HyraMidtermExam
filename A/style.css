@@ -12,32 +12,30 @@
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  padding: 20px;
 }
 
 header .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  background-color: rgba(131,48,255, 0.5);
 }
 
 .navbar .logo {
   color: #fff;
-  font-weight: 600;
   font-size: 2.1rem;
   text-decoration: none;
   width: auto;
+  margin-left: -25px;
 }
 
 .navbar .menu-links {
   display: flex;
   list-style: none;
   gap: 35px;
+  margin-right: 40px;
 }
 
 .navbar a {
@@ -53,6 +51,10 @@ header .navbar {
   justify-content: center;
 }
 
+.logo-container .logo{
+  transition: 0.2s ease;
+}
+
 .logo-container span:hover {
   color: #b98cc7;
 }
@@ -60,7 +62,6 @@ header .navbar {
 .navbar a:hover {
   color: #b98cc7;
 }
-
 
 .hero-section {
   height: 100vh;
@@ -70,13 +71,14 @@ header .navbar {
   background-size: cover;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 .hero-section .content {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
+  max-width: 700px;
   width: 100%;
   color: #fff;
   align-items: center;
@@ -84,23 +86,22 @@ header .navbar {
   text-align: center;
 }
 
-.hero-section .content h2 {
-  font-size: 4rem;
-  max-width: 600px;
+.hero-section .content h1 {
+  font-size: 60px;
   line-height: 70px;
+	color: white;
+  text-shadow: 0px 0px 20px #04D9FF;
 }
 
 .hero-section .content h3 {
-  font-size: 2rem;
-  max-width: 600px;
-  line-height: 70px;
+  font-size: 30px;
 }
 
 .hero-section .content p {
   font-weight: 300;
-  max-width: 600px;
-  margin-top: 24px;
-  font-size: 1.7rem;
+  margin-top: 10px;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px #04D9FF;
 }
 
 .hero-section .content button {
@@ -136,10 +137,6 @@ header .navbar {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-
   header.show-mobile-menu::before {
     content: "";
     position: fixed;
@@ -192,83 +189,200 @@ header .navbar {
   .hero-section .content {
     text-align: center;
   }
+}
 
-  .hero-section .content :is(h2, p) {
-    max-width: 100%;
-  }
+img#start-img {
+  box-shadow: 0px 0px 20px 7px  rgba(4, 217, 255, 0.6);
+  width: 136px
+}
 
-  .hero-section .content h2 {
-    font-size: 2.3rem;
-    line-height: 60px;
-  }
-  
-  .hero-section .content button {
-    padding: 9px 18px;
-  }
+.content .start-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem 0rem 1rem 0rem;
+  cursor: pointer;
+}
+.start-btn img {
+  border-radius: 10%;
+  margin-top: 5px;
+  margin-bottom: 6px;
 }
 
 /* vision mision pop out */
 
+.section-center {
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+}
+
+.section-center2 {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+
 .question {
-  padding: 0.5rem 1rem 1rem 1rem;
-  border: 3px solid rgba(4, 217, 255);
-  background: rgba(143, 79, 179, 0.4);
+  /* top, right, bottom, left */
+  padding: 0px 29px 0px 10px; 
+  border: 3px solid rgba(4, 217, 255, 0.4);
+  background: rgba(131,48,255, 0.5);
   border-radius: 10px;
   margin-bottom: 2rem;
   box-shadow: 2px 2px 20px 1px  rgba(4, 217, 255);
+  margin-inline: 10px;
 }
 
-.question-btn img {
-  width: 60px;
-  margin-left: 60px;
-  margin-bottom: -30px;
+.question2 {
+  /* top, right, bottom, left */
+  padding: 0px 10px; 
+  border: 3px solid rgba(4, 217, 255, 0.4);
+  background: rgba(131,48,255, 0.5);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 20px 1px  rgba(4, 217, 255);
+  margin-inline: 10px;
 }
 
 .question-title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 1rem;
-}
-.question-title p {
-  margin-bottom: 12px;
-}
-.question-btn {
-  font-size: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  color: var(--clr-gold);
-  transition: var(--transition);
+  padding-bottom: 3px;
+  padding-top: 2px;
 }
 
-/* flip only if opened */
-/* .question-btn:hover {
-  transform: rotate(180deg);
-} */
+.question-title p {
+  margin-bottom: 1px;
+}
+
+.question-btn img {
+  width: 20px;
+  margin-right: -20px;
+  border-radius: 20%;
+}
+
+.question-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.question-btn2 {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
 .question-text {
-  /* padding: 1rem 0 1.5rem 0;
-  background: rgba(143, 79, 179, 0.6);
-  border-radius: 20px; */
   border-top: 3px solid rgba(4, 217, 255);
 }
+
 .question-text p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
+
 /* hide text */
 .question-text {
   display: none;
 }
+
 .show-text .question-text {
   display: block;
 }
-/* .minus-icon {
+
+.typeCard {
   display: none;
+  height: 200px;
+  background-color: #b98cc7;
+  width: 200px;
 }
-.show-text .minus-icon {
-  display: inline;
+
+#types-container {
+  width: 500px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.show-text .plus-icon {
-  display: none;
-}  */
+
+.types-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pokeTypeButton {
+  width: 229px;
+  display: block;
+  flex-direction: row;
+  cursor: pointer;
+  margin: auto;
+  border: 5px #fff;
+}
+
+.typeLetters img {
+  width: 30px;
+  margin-right: -2px;
+  border-radius: 20%;
+}
+
+/* hyra cayambas */
+.author img {
+  width: 30px;
+  margin-right: -8px;
+  border-radius: 20%;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 430px) {
+  .section-center {
+    flex-direction: column;
+  }
+}
+
+/* synergy start */
+
+.content .type-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .type-icons img {
+  width: 1000px;
+  height: 1000px;
+}
+
+/* glitch fx experiment try lang naman bawal judger
+
+.title {
+  animation: glitch 30s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+} */
