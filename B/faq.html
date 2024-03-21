@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hyra Cayambas">
-    <title>Keebs4Weebs by Hyra</title>
+    <title>Keebs4Weebs</title>
+    <link rel="icon" type="image/x-icon" href="src/klogo.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"><img src="src/menu_FILL0_wght400_GRAD0_opsz24.png"></i>
+                    </button>
+                </div>
+                <!-- <div class="logo"><img src="src/klogo.jpg"></div> -->
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href=""><img src="src/person_FILL0_wght400_GRAD0_opsz24.png"></a></li>
+                    <li><a href=""><img src="src/shopping_bag_FILL0_wght400_GRAD0_opsz24.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="wallpaper-container">
+            <img src="src/spiritedpixels1.png">
+            <div class="web-name">Keebs4Weebs</div>
+            <div class="author-name">by Hyra Cayambas</div>
+        </div>
+        <div class="company">
+            <p>Frequently Asked Questions</p>
+            <div class="popup" onclick="togglePopup('popup1')">Do you offer refunds?
+                <span class="popuptext" id="popup1">Nope, gomen!</span>
+            </div>
+            <div class="popup" onclick="togglePopup('popup2')">Did a noob develop this website?
+                <span class="popuptext" id="popup2">Real.</span>
+            </div>
+            <div class="popup" onclick="togglePopup('popup3')">Do you trade?
+                <span class="popuptext" id="popup3">Nope ^^</span>
+            </div>
+            <div class="popup" onclick="togglePopup('popup4')">What is/are your mode of payment/s?
+                <span class="popuptext" id="popup4">Bank Transfer, Cash on Delivery, Online Wallet</span>
+            </div>
+            <div class="popup" onclick="togglePopup('popup5')">Do you have a physical store?
+                <span class="popuptext" id="popup5">Working on it :D</span>
+            </div>
+        </div>
+    </div>
 
 <script src="app.js"></script>
 </body>

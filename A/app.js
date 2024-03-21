@@ -42,13 +42,15 @@ questions2.forEach((question2) => {
     })
 })
 
+// alan jy poketypes
+
 document.addEventListener("DOMContentLoaded", function() {
     if(location.pathname === '/A/synergy.html') {
         loadPokeTypes();
     }
 
-    // always use async for api requests
-    // refer to: javascript async/await or javascript promises
+    // palagi async for api requests
+    // refer moo to: javascript async/await or javascript promises
     async function loadPokeTypes()
     {
         const res = await fetch('https://pokeapi.co/api/v2/type');
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
             typeEl.className = 'typeLetters';
             let imgsString = '<a class="pokeTypeButton" onclick="buttonClicked()">';
             const typeName = typeObj.name.toLowerCase();
+            // loop to spell the poketype using images
             for(const letter of typeName) {
                 imgsString += `<img src="src/key_${letter}.png">`;
             }
