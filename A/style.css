@@ -102,6 +102,7 @@ header .navbar {
   margin-top: 10px;
   font-size: 20px;
   text-shadow: 0px 0px 10px #04D9FF;
+  margin-bottom: 15px;
 }
 
 .hero-section .content button {
@@ -240,9 +241,9 @@ img#start-img {
   border: 3px solid rgba(4, 217, 255, 0.4);
   background: rgba(131,48,255, 0.5);
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   box-shadow: 2px 2px 20px 1px  rgba(4, 217, 255);
-  margin-inline: 10px;
+  /* margin-inline: 10px; */
 }
 
 .question-title {
@@ -367,6 +368,81 @@ img#start-img {
 .content .type-icons img {
   width: 1000px;
   height: 1000px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  visibility: hidden;
+  z-index: -10;
+  place-items: center;
+}
+
+.open-modal {
+  visibility: visible;
+  z-index: 1000;
+}
+
+.modal-container {
+  width: 90vw;
+  min-height: 400px;
+  text-align: center;
+  display: grid;
+  position: relative;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+}
+
+.close-btn img {
+  width: 30px;
+}
+
+.pokeTypeCardModalContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 14px;
+  gap: 20px;
+  text-transform: capitalize;
+}
+
+.pokeTypeExamples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.examplePokemon {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+}
+
+.examplePokemon img {
+  width: 80px;
+  height: 80px;
+}
+
+.pokeTypeStats {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
 }
 
 /* glitch fx experiment try lang naman bawal judger

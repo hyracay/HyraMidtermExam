@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'Kanji';
-    src: url(src/Sughoiy\ Demo.ttf);
-}
-@font-face {
-    font-family: 'Manga';
-    src: url(src/CCWildWordsLower-Regular.ttf);
-}
-@font-face {
     font-family: 'Gameboy';
     src: url(/A/src/gameboy2.ttf);
 }
@@ -29,7 +21,6 @@
 body {
   font-family: 'Gameboy' ,Arial, Helvetica, sans-serif;
   background: rgba(246,248,158,0.3);
-  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.895rem;
 }
@@ -184,11 +175,7 @@ margin-right: 650px;
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
     transition: var(--transition);
-  }
-  .social-icons a:hover {
-    color: var(--clr-primary-7);
   }
 }
 
@@ -217,8 +204,8 @@ margin-right: 650px;
 .wallpaper-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 .wallpaper-container .description {
@@ -254,12 +241,7 @@ margin-right: 650px;
     font-size: 15px;
     font-family: inherit;
   }
-  
-  /* .active, .collapsible:hover {
-    background-color: #EAD3C8;
-  }
-   */
-  /* Style the collapsible content. Note: hidden by default */
+
   .content {
     padding: 18px;
     display: none;
@@ -304,7 +286,6 @@ margin-right: 650px;
   .menu-item {
     display: grid;
     gap: 1rem 2rem;
-    /* max-width: 25rem; */
   }
   .photo {
     object-fit: cover;
@@ -315,13 +296,9 @@ margin-right: 650px;
   .item-info header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.5px dotted var(--clr-grey-5);
   }
   .item-info h4 {
     margin-bottom: 0.5rem;
-  }
-  .price {
-    color: var(--clr-gold);
   }
   .item-text {
     margin-bottom: 0;
@@ -359,8 +336,8 @@ footer img {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
 }
 
 /* faqs */
@@ -369,10 +346,6 @@ footer {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 /* The actual popup */
@@ -402,15 +375,11 @@ footer {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
-/* Toggle this class - hide and show the popup */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-
-/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
   to {opacity: 1;}
