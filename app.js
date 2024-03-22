@@ -61,7 +61,7 @@ function shuffleArray(array) {
 // alan jy poketypes
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (location.pathname === "/A/synergy.html") {
+  if (location.pathname === "/synergy.html") {
     loadPokeTypes();
   }
 
