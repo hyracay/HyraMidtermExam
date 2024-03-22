@@ -63,7 +63,7 @@ function shuffleArray(array) {
 document.addEventListener("DOMContentLoaded", function () {
   const linkSplit = location.pathname.split('/');
   const link = linkSplit[linkSplit.length - 1];
-  if (link === "synergy.html") {
+  if (link.startsWith("synergy")) {
     loadPokeTypes();
   }
 
